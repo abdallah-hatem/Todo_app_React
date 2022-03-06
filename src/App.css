@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.container {
+   text-align: center;
+   padding: 10px;
+   background-color: rgb(16, 75, 109);
+   width: 30%;
+   border-radius: 5px;
+   position: absolute;
+   right: 35%;
+   top: 100px;
+   color: white;
+   font-size: 20px;
+   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container #title {
+   font-size: 30px;
+   margin-top: 0;
+   font-weight: 600;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputs {
+   display: flex;
+   justify-content: center;
+}
+.inputs input {
+   width: 90%;
+   font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container #delete {
+   background-color: rgb(27, 255, 65);
+   color: white;
+   padding: 5px;
+   width: 10%;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.todos {
+   background-color: white;
+   color: black;
+   width: 80%;
+   margin-left: 25px;
+   text-align: left;
+   font-size: 19px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   height: 40px;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.todos p {
+   padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos i {
+   background-color: red;
+   padding: 10px;
+   border-radius: 5px;
+   color: white;
+   height: 22px;
+   cursor: pointer;
+   /* visibility: hidden;
+   transition: 0.3s; */
 }
+
+/* .todos:hover i {
+   visibility: visible;
+} */
+
+/* .btns button {
+   background-color: rgb(38, 0, 255);
+   margin-left: 5px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   height: 43px;
+   cursor: pointer;
+   font-size: 20px;
+} */
